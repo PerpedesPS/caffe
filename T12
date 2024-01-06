@@ -1,0 +1,21 @@
+# Create a list of cafe items called menu
+menu = ['Coffee', 'Tea', 'Muffin', 'Bagel']
+
+# Create a dictionary of stock values, with each item on the menu as a key and corresponding stock value as value
+stock = {'Coffee': 50, 'Tea': 75, 'Muffin': 20, 'Bagel': 15}
+
+# Create a dictionary of prices, with each item on the menu as a key and corresponding price as value
+price = {'Coffee': 2.50, 'Tea': 2.00, 'Muffin': 1.50, 'Bagel': 1.00}
+
+# Initialize the total_stock_worth variable to zero
+total_stock_worth = 0
+
+# Loop through each item in the menu list
+for item in menu:
+    # Calculate the value of the current item
+    item_value = stock[item] * price[item]
+    # Add the current item value to the total stock worth
+    total_stock_worth += item_value
+
+# Print the final result
+print("The total stock worth in the cafe is: $%.2f" % total_stock_worth)
